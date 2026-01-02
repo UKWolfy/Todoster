@@ -1,0 +1,15 @@
+use chrono::{DateTime, Local};
+use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Debug, Clone)]
+pub struct TodoItem {
+    pub text: String,                         // The to-do text
+    pub complete: bool,                       // true / false
+    pub complete_date: Option<DateTime<Local>>, // When it was completed
+    pub repeat_days: Option<i64>,             // How often it repeats, in days
+}
+
+#[derive(Serialize, Deserialize, Debug, Default)]
+pub struct TodoList {
+    pub items: Vec<TodoItem>,
+}

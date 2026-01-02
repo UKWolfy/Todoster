@@ -1,0 +1,16 @@
+Pseudo code
+
+
+
+Pull from data file.
+Data in file: Text, status, repeat interval.
+
+text: feed gecko
+status: Incomplete
+Repeat: 2 Days
+status_changed: [Date marked complete]
+
+Feed gecko todo item is incomplete, once completed, it will repeat 2 days after status_changed
+
+
+

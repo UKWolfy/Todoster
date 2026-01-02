@@ -1,0 +1,11 @@
+[package]
+name = "todo_ron_cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+ron = "0.8"
+chrono = { version = "0.4", features = ["serde", "clock"] }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"

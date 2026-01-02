@@ -1,0 +1,10 @@
+(
+    items: [
+        /*[0]*/ (
+            text: "feed the gecko",
+            complete: true,
+            complete_date: Some("2026-01-02T11:29:09.004954068Z"),
+            repeat_days: Some(2),
+        ),
+    ],
+)
