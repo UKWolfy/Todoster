@@ -1,5 +1,9 @@
 # Todoster — RON-backed CLI To-Do App
 
+[![Crates.io](https://img.shields.io/crates/v/todo?label=crates.io)](https://crates.io/crates/todo)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Rust](https://img.shields.io/badge/rust-stable-orange)](https://www.rust-lang.org/)
+
 A simple, lightweight command-line to-do manager written in Rust.  
 Tasks are stored in a human-readable **RON file** at:
 
