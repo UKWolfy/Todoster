@@ -1,4 +1,18 @@
-target/
-*.ron~
-*.log
+# Cargo build output
+/target/
+
+# Local user data (if the app ever writes here)
 todos.ron
+
+# Release artifacts
+/dist/
+/*.tar.gz
+/todo
+/todo-*
+
+# Backup / editor files
+*.log
+*.swp
+*.tmp
+.DS_Store
+
