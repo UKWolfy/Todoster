@@ -130,24 +130,3 @@ Example stored task entry:
   ],
 )
 ```
-
----
-
-## 🚧 Roadmap Ideas
-
-- 1-based UI indexes (keep internal 0-based)
-- colourised CLI output
-- tags / priorities
-- `stats` command
-- optional SQLite backend
-
----
-
-## 🦀 Built With
-
-- Rust
-- clap
-- chrono
-- ron
-- anyhow
-- serde
