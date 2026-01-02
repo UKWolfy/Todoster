@@ -1,8 +1,14 @@
 [package]
 name = "todo_ron_cli"
 version = "0.1.0"
-edition = "2021"
-licence = "MIT"
+description = "A lightweight RON-backed command-line to-do manager"
+authors = ["Christopher Hall"]
+license = "MIT"
+repository = "https://github.com/UKWolfy/todoist"
+homepage = "https://github.com/UKWolfy/todoist"
+readme = "README.md"
+keywords = ["todo", "cli", "rust", "ron"]
+categories = ["command-line-utilities", "productivity"]
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
