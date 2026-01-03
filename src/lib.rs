@@ -221,7 +221,7 @@ fn print_list(list: &TodoList, now: DateTime<Local>) {
     } else {
         for (idx, item) in incomplete {
             let repeat_info = match item.repeat_days {
-                Some(days) => format!("(repeats every {} days)", days),
+                Some(days) => format!("(Repeat: {} d)", days),
                 None => String::new(),
             };
 
@@ -247,9 +247,9 @@ fn print_list(list: &TodoList, now: DateTime<Local>) {
                         let days = diff.num_days();
                         let hours = (diff - Duration::days(days)).num_hours();
                         if days > 0 {
-                            format!("(repeat in {} days, {} hours)", days, hours)
+                            format!("(repeat in {}d, {}hrs)", days, hours)
                         } else {
-                            format!("(repeat in {} hours)", hours)
+                            format!("(repeat in {} hrs)", hours)
                         }
                     }
                 }
