@@ -102,6 +102,8 @@ Use a custom data file:
 todo --file work.ron list
 ```
 
+If you wish to reset a timer on a task that's already complete, simply mark it complete again.
+
 ---
 
 ## 🧪 Tests
