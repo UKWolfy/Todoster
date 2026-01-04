@@ -55,3 +55,18 @@ fn non_repeating_task_does_not_reset() {
     assert_eq!(item.complete, true);
     assert!(item.complete_date.is_some());
 }
+
+#[test]
+fn repeat_is_due_from_midnight_on_due_day() {
+    use chrono::{Local, TimeZone};
+
+    // Completed on Jan 1 at 13:00, repeats every 2 days => due date Jan 3, due from 00:00
+    let done_at = Local.with_ymd_and_hms(2026, 1, 1, 13, 0, 0).unwrap();
+    let due_midnight = Local.with_ymd_and_hms(2026, 1, 3, 0, 0, 0).unwrap();
+
+    let mut item = TodoItem::new("Repeat test".into(), Some(2));
+    item.complete = true;
+    item.complete_date = Some(done_at);
+
+    assert!(item.should_reset(due_midnight));
+}
